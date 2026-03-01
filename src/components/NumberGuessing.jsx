@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { RotateCcw, Trophy, XCircle } from 'lucide-react';
 
-export default function NumberGuessingGame() {
+export default function NumberGuessing() {
   const [targetNumber, setTargetNumber] = useState(0);
   const [userGuess, setUserGuess] = useState('');
   const [message, setMessage] = useState('Guess a number between 0 and 100');
@@ -51,7 +51,7 @@ export default function NumberGuessingGame() {
   };
 
   return (
-    <section className="relative bg-[#171717] py-24 px-6 min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section id="numberguessing" className="relative bg-[#171717] py-24 px-6 min-h-[600px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-5">
         <h2 className="text-[25vw] font-black italic font-space-grotesk text-white select-none">GAME</h2>
       </div>
