@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neutral-800 text-white;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  h1 {
+    font-family: 'Markazi Text', serif;
+    font-weight: 700;
+    font-size: 64px;
+  }
+
+  h2 {
+    font-family: 'Markazi Text', serif;
+    font-weight: 700;
+    font-size: 36px;
+  }
+
+  h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 32px;
+  }
+}
