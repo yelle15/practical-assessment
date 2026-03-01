@@ -1,4 +1,13 @@
 export default function Hero() {
+  const handleDownloadPDF = () => {
+    const link = document.createElement('a');
+    link.href = '/Atenews Web Development Portfolio.pdf';
+    link.download = 'Atenews Web Development Portfolio.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <header id="about" className="flex w-full flex-col items-center justify-center gap-12 px-6 py-16 md:flex-row md:px-20">
       <div className="flex flex-col items-center gap-6"> 
@@ -36,7 +45,10 @@ export default function Hero() {
           and music.
         </p>
         <div className="flex justify-center w-full">
-          <button className="rounded-lg bg-red-600 px-8 py-2 font-bold text-white hover:bg-red-700">
+          <button 
+            onClick={handleDownloadPDF}
+            className="rounded-lg bg-red-600 px-8 py-2 font-bold text-white hover:bg-red-700"
+          >
             Download Portfolio
           </button>
         </div>
