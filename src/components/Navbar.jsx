@@ -12,7 +12,7 @@ export default function Navbar() {
             <a href="#about" className="hover:text-red-500 transition-colors">About Me</a>
           </li>
           <li>
-            <a href="#hobbies" className="hover:text-red-500 transition-colors">Number Guessing Game</a>
+            <a href="#numberguessing" className="hover:text-red-500 transition-colors">Number Guessing Game</a>
           </li>
         </ul>
       </div>
